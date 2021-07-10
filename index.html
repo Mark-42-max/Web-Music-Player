@@ -26,8 +26,12 @@
             <div class="rotating-image">
             </div>
 
-            <div class="soundbar">
-
+            <div class="soundbar" id="volumeUpDown">
+                <div class="sound-controls">
+                    <i class="fas fa-3x fa-plus-circle" aria-hidden="true" id="volumechange" onchange="volumeChange();"></i>
+                    <input type="range" min="0" max="100" value="50" onchange="volumeChange();">
+                    <i class="fas fa-3x fa-minus-circle" aria-hidden="true" id="volumechange" onchange="volumeChange();"></i>
+                </div>
             </div>
         </div>
         <div class="right">

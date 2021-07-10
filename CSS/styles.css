@@ -74,18 +74,30 @@
      -webkit-text-fill-color: transparent;
  }
  
+ .rotating-image::before {
+     content: '';
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-position: center;
+     background-image: url("/Media/Images/image\ 1.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 50%;
+ }
+ 
  .rotating-image {
+     position: relative;
      width: 100%;
      height: 60%;
-     background-color: coral;
-     display: grid;
-     place-items: center;
  }
  
  .soundbar {
      width: 100%;
      height: 20%;
-     background-color: darkviolet;
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }
  
  .right {
