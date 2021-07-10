@@ -3,6 +3,11 @@
      src: url("/Media/writing/NEON\ CLUB\ MUSIC_bold.otf")format("opentype");
  }
  
+ @font-face {
+     font-family: happy-ending;
+     src: url("/Media/writing-2/MyHappyEndingRegular-Lx7G.ttf")format("truetype");
+ }
+ 
  *,
  *::before,
  *::after {
@@ -77,7 +82,7 @@
  .rotating-image::before {
      content: '';
      position: absolute;
-     width: 100%;
+     width: 50%;
      height: 100%;
      background-position: center;
      background-image: url("/Media/Images/image\ 1.png");
@@ -90,6 +95,10 @@
      position: relative;
      width: 100%;
      height: 60%;
+     padding: 6vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
  }
  
  .soundbar {
@@ -100,39 +109,116 @@
      align-items: center;
  }
  
+ .soundbar input[type="range"] {
+     width: 15vw;
+ }
+ 
  .right {
-     background-color: green;
      width: 50%;
      height: 100%;
  }
  
  .song-name {
      width: 100%;
-     height: 25%;
-     background-color: pink;
+     height: 20%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: auto;
+ }
+ 
+ .song-name h2 {
+     font-size: 5rem;
+     font-family: happy-ending;
+     background-color: #3f0d12;
+     background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+     background-size: 100%;
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
  }
  
  .artist {
      width: 100%;
-     height: 25%;
-     background-color: palegreen;
+     height: 20%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .artist h3 {
+     font-family: happy-ending;
+     font-size: 4rem;
+     background-color: #3f0d12;
+     background-image: linear-gradient(315deg, #3f0d12 0%, #a71d31 74%);
+     background-size: 100%;
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
  }
  
  .controls {
      width: 100%;
-     height: 25%;
-     background-color: seagreen;
+     height: 20%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .previous,
+ .playpause,
+ .nex {
+     margin: auto;
+ }
+ 
+ .previous button,
+ .playpause button,
+ .nex button {
+     width: 6vw;
+     height: 12vh;
+     border-radius: 50%;
+ }
+ 
+ .autoplay {
+     width: 100%;
+     height: 20%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .autoplay button {
+     margin: auto;
+     border-radius: 7%;
+     width: 20vw;
+     height: 6vh;
+     font-size: 2rem;
  }
  
  .progress {
      width: 100%;
-     height: 25%;
-     background-color: black;
+     height: 20%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .progress input[type="range"] {
+     width: 30vw;
  }
  /* ########### #Phone# ############## */
  
  @media screen and (max-width: 600px) {
      .logo-txt {
          display: none;
+     }
+     .song-name h2 {
+         font-size: 2.5rem;
+     }
+     .artist h3 {
+         font-size: 2rem;
+     }
+     .autoplay button {
+         font-size: 1rem;
      }
  }

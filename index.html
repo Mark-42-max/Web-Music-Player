@@ -28,28 +28,40 @@
 
             <div class="soundbar" id="volumeUpDown">
                 <div class="sound-controls">
-                    <i class="fas fa-3x fa-plus-circle" aria-hidden="true" id="volumechange" onchange="volumeChange();"></i>
+                    <i class="fas fa-3x fa-minus-circle" aria-hidden="true" id="volumechange"></i>
                     <input type="range" min="0" max="100" value="50" onchange="volumeChange();">
-                    <i class="fas fa-3x fa-minus-circle" aria-hidden="true" id="volumechange" onchange="volumeChange();"></i>
+                    <i class="fas fa-3x fa-plus-circle" aria-hidden="true" id="volumechange"></i>
                 </div>
             </div>
         </div>
         <div class="right">
 
             <div class="song-name">
-
+                <h2>Hymn For the Weekend</h2>
             </div>
 
             <div class="artist">
-
+                <h3>ColdPlay</h3>
             </div>
 
             <div class="controls">
-
+                <div class="previous">
+                    <button onclick="prev();"><i class="fas fa-backward" aria-hidden="true"></i></button>
+                </div>
+                <div class="playpause">
+                    <button onclick="playPause();"><i class="fas fa-play" aria-hidden="true"></i></button>
+                </div>
+                <div class="nex">
+                    <button onclick="next();"><i class="fas fa-forward" aria-hidden="true"></i></button>
+                </div>
             </div>
 
-            <div class="progress">
+            <div class="autoplay">
+                <button onclick="auto();"><i class="fas fa-play-circle">Auto Play</i></button>
+            </div>
 
+            <div class="progress" id="duration">
+                <input type="range" min="0" max="100" value="0" onchange="duration_change();">
             </div>
         </div>
     </div>
