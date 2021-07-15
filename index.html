@@ -23,36 +23,41 @@
                 </div>
             </div>
 
-            <div class="rotating-image" id="anim">
+            <div class="rotating-image">
+                <img src="/Media/Images/image 1.png" id="anim" alt="">
+            </div>
+
+            <div class="sound-percent">
+
             </div>
 
             <div class="soundbar" id="volumeUpDown">
                 <div class="sound-controls">
                     <i class="fas fa-3x fa-minus-circle" aria-hidden="true" id="volumechange"></i>
-                    <input type="range" min="0" max="100" value="50" onchange="volumeChange();">
+                    <input type="range" id="volume-value" min="0" max="100" value="50" onchange="volumeChange();">
                     <i class="fas fa-3x fa-plus-circle" aria-hidden="true" id="volumechange"></i>
                 </div>
             </div>
         </div>
         <div class="right">
 
-            <div class="song-name">
+            <div class="song-name" id="name">
                 <h2>Hymn For the Weekend</h2>
             </div>
 
-            <div class="artist">
+            <div class="artist" id="art">
                 <h3>ColdPlay</h3>
             </div>
 
             <div class="controls">
-                <div class="previous">
-                    <button onclick="prev();"><i class="fas fa-backward" aria-hidden="true"></i></button>
+                <div class="previous" id="prev">
+                    <button><i class="fas fa-backward" aria-hidden="true"></i></button>
                 </div>
                 <div class="playpause" id="playpause">
                     <button><i class="fas fa-play" aria-hidden="true"></i></button>
                 </div>
-                <div class="nex">
-                    <button onclick="next();"><i class="fas fa-forward" aria-hidden="true"></i></button>
+                <div class="nex" id="next">
+                    <button><i class="fas fa-forward" aria-hidden="true"></i></button>
                 </div>
             </div>
 
