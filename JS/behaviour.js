@@ -106,4 +106,8 @@ next.addEventListener("click", function() {
         song_index++;
     }
     loadMusic(song_index);
+    if (isPlaying) {
+        track.play();
+        playpause.querySelector("#playpause button i").classList.replace("fa-play", "fa-pause");
+    }
 })
