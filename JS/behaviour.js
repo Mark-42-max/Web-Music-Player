@@ -26,6 +26,13 @@ let AllSongs = [{
         path: "/Media/Audio/Audio 4.mp3",
         artist: "Cartoon Ft. Daniel Levi",
         cover: "/Media/Images/image 4.jpg"
+    },
+
+    {
+        name: "2002",
+        path: "/Media/Audio/Audio 5.mp3",
+        artist: "Anne Marie",
+        cover: "/Media/Images/image 5.jpg"
     }
 ]
 
@@ -87,6 +94,7 @@ function pauseMusic() {
     track.pause();
     isPlaying = false;
 }
+
 
 //Next Song
 
