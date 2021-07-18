@@ -49,6 +49,7 @@ var playpause = document.getElementById("playpause");
 var isPlaying = false;
 var song_index = 0;
 
+
 //UI Display Elements
 var song_name = document.getElementById("name").querySelector("h2");
 var artist_name = document.getElementById("art").querySelector("h3");
@@ -254,6 +255,8 @@ track.addEventListener("loadeddata", () => {
             }
         }
     }, 500);
+
+
 });
 
 function duration_change() {
@@ -270,3 +273,20 @@ function auto() {
     isAuto = !isAuto;
 
 }
+
+//key binding
+
+window.addEventListener("keydown", (key) => {
+
+    if (key.keyCode == 32) {
+        playpause.click();
+    }
+
+    if (key.keyCode == 37) {
+        previous.click();
+    }
+
+    if (key.keyCode == 39) {
+        next.click();
+    }
+});
