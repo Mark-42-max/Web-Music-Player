@@ -276,7 +276,22 @@ function auto() {
 
 //key binding
 
+// var left;
+// var right;
+// var space;
+// var ctrl;
+
 window.addEventListener("keydown", (key) => {
+
+    // if (key.keyCode == 32) {
+    //     space = true;
+    // } else if (key.keyCode == 37) {
+    //     left = true;
+    // } else if (key.keyCode == 39) {
+    //     right = true;
+    // } else if (key.keyCode == 17) {
+    //     ctrl = true;
+    // }
 
     if (key.keyCode == 32) {
         playpause.click();
@@ -290,3 +305,27 @@ window.addEventListener("keydown", (key) => {
         next.click();
     }
 });
+
+// window.addEventListener("keyup", (key) => {
+
+//     if (key.keyCode == 32) {
+//         space = false;
+//     } else if (key.keyCode == 37) {
+//         left = false;
+//     } else if (key.keyCode == 39) {
+//         right = false;
+//     } else if (key.keyCode == 17) {
+//         ctrl = false;
+//     }
+// });
+
+
+// if (space) {
+//     playpause.click();
+// } else if (left) {
+//     previous.click();
+// } else if (right) {
+//     next.click();
+// } else if (ctrl && left) {
+//     console.log("het");
+// }
